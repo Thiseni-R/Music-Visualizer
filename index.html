@@ -3,12 +3,23 @@
     <head>
         <title>Music Visualizer</title>
         <link rel="stylesheet" href="style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/addons/p5.sound.min.js"></script>
+        <script src="sketch.js"></script>
         
     </head>
     <body>
-        <div class="searchbox">
-            <input type="text" placeholder="Enter song title" spellcheck="false">
-                <button><img src="images/search.svg"></button>
+        <div class="content">
+        <div class="topbar">
+            <div class="searchbox">
+                <input type="text" placeholder="Enter song title" spellcheck="false">
+                    <button><img src="images/search.svg"></button>
+            </div>
+    
+        <div class="spotify">
+            <button onclick="loginWithSpotify()">
+                <img src="images/spotify-fill-svgrepo-com.svg"></button>
+        </div>
         </div>
         <div class="nowplaying">
             
@@ -22,5 +33,22 @@
          <div class="vinyl"><img src="images/vinyl-svgrepo-com.svg"></div>
         </div>
 
+
+        <div id="visualizer"></div>
+        </div>
+        
+
+        <script src="https://sdk.scdn.co/spotify-player.js"></script>
+        
+<script src="https://sdk.scdn.co/spotify-player.js"></script>
+<script src="script.js"></script>
+
+
+
+
     </body>
+
+
+
+
 </html>
